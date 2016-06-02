@@ -7,5 +7,19 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+  <form method="POST" action="/words">
+  <h4>English</h4><input type="text" name="ing">
+  <h4>Spanish</h4><input type="text" name="esp">
+  <input type="submit" value="Submit">
+  </form>
+
+
+  <ul>
+  <% for (word in words) { %>
+  <li><%= words[word]['ing'] %> - <%=words[word]['esp'] %></li>
+  <% } %>
+
+  </ul>
+
   </body>
 </html>
