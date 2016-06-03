@@ -1,4 +1,5 @@
 var WordModel = require('../models/WordModel.js');
+// ^^ imports the wordmodel scaffold
 
 // WordController.js
 
@@ -6,7 +7,7 @@ var WordModel = require('../models/WordModel.js');
 
 module.exports = {
 
-	// WordController.list()
+	// WordController.list(), this GETS all the entries from the DB
 
 	list: function (req, res) {
 		WordModel.find(function (err, words) {
@@ -14,7 +15,7 @@ module.exports = {
 		});
 	},
 
-	// WordController.show()
+	// WordController.show(), this GETS a single entry by ID
 
 	show: function (req, res) {
 		var id = req.params.id;
@@ -23,7 +24,7 @@ module.exports = {
 		});
 	},
 
-	// WordController.create()
+	// WordController.create(), this POSTs to the DB
 
 	create: function (req, res) {
 		var word = new WordModel({
@@ -37,7 +38,7 @@ module.exports = {
 
 	},
 
-	// WordController.update()
+	// WordController.update(), this PUTs an update to an entry in the DB
 
 	update: function (req, res) {
 		var id = req.params.id;
@@ -50,7 +51,7 @@ module.exports = {
 		});
 	},
 
-	// WordController.remove()
+	// WordController.remove(), this deletes a single entry in the DB
 
 	remove: function (req, res) {
 		var id = req.params.id;

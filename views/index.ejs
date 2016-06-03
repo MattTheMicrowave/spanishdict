@@ -7,13 +7,17 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-  <form id="word-form">
+
+  <!-- the following form takes 2 inputs, and upon submission, POSTs to the DB
+  and updates the word list below   -->
+  <form id="word-form" method="POST" action="/words">
   <h4>English</h4><input id="inginput" type="text" name="ing">
   <h4>Spanish</h4><input id="espinput" type="text" name="esp">
   <input type="submit" value="Submit">
   </form>
 
-
+  <!-- the following list is populated from the entries housed in the DB, it
+  can be updated upon submission of the form above -->
   <ul id="word-list">
   <% for (word in words) { %>
   <li><%= words[word]['ing'] %> - <%=words[word]['esp'] %></li>
