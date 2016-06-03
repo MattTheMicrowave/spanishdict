@@ -7,9 +7,9 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-  <form method="POST" action="/words">
-  <h4>English</h4><input type="text" name="ing">
-  <h4>Spanish</h4><input type="text" name="esp">
+  <form id="word-form">
+  <h4>English</h4><input id="inginput" type="text" name="ing">
+  <h4>Spanish</h4><input id="espinput" type="text" name="esp">
   <input type="submit" value="Submit">
   </form>
 
@@ -20,6 +20,7 @@
   <% } %>
 
   </ul>
-
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+  <script type="text/javascript" src="../javascripts/index.js"></script>
   </body>
 </html>
