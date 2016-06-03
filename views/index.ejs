@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Mi Diccionario</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1>Mi Diccionario para Ampliar Mi Vocabulario</h1>
+    <h2>Me Ayuda y Puede Ayudarle También</h2>
+    <p>Agréguele Algo Si Quiere</p>
 
   <!-- the following form takes 2 inputs, and upon submission, POSTs to the DB
   and updates the word list below   -->
   <form id="word-form" method="POST" action="/words">
-  <h4>English</h4><input id="inginput" type="text" name="ing">
-  <h4>Spanish</h4><input id="espinput" type="text" name="esp">
+  <h4>La Palabra en Inglés</h4><input id="inginput" type="text" name="ing">
+  <h4>Lo que Significa en Castellano</h4><input id="espinput" type="text" name="esp">
   <input type="submit" value="Submit">
   </form>
 
