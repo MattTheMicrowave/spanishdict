@@ -15,11 +15,11 @@ $('#word-form').on('submit', function() {
     });
     $('#inginput').val("");
     $('#espinput').val("");
+    addWord(ingles, espanol);
 });
 
 function addWord(ingles, espanol) {
-    
-
-
-
+    var $li = $('<li></li>');
+    $li.append(ingles + ' - ' + espanol);
+    $('#word-list').append($li);
 }
