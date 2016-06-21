@@ -43,8 +43,8 @@ module.exports = {
 	update: function (req, res) {
 		var id = req.params.id;
 		WordModel.findOne({_id: id}, function (err, word) {
-			word.ing = req.body.ing ? req.body.ing : ing.ing;
-			word.esp = req.body.esp ? req.body.esp : esp.esp;
+			word.ing = req.body.ing ? req.body.ing : word.ing;
+			word.esp = req.body.esp ? req.body.esp : word.esp;
 			word.save(function (err, word) {
 				return res.json(word);
 			});
