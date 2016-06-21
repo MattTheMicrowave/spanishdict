@@ -1,10 +1,10 @@
 {
   "name": "spanishdict",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "develop": "./node_modules/.bin/nodemon ./bin/www"
+    "develop": "nodemon ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -21,5 +21,17 @@
   },
   "engines": {
     "node": "5.11.1"
-  }
+  },
+  "description": "an english to spanish dictionary",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattTheMicrowave/spanishdict.git"
+  },
+  "author": "Matthew Lluis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattTheMicrowave/spanishdict/issues"
+  },
+  "homepage": "https://github.com/MattTheMicrowave/spanishdict#readme"
 }
