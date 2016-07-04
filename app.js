@@ -10,7 +10,7 @@ var users = require('./routes/users');
 var mongoose = require('mongoose');
 var words = require('./routes/words');
 
-mongoose.connect('mongodb://localhost/spanishdict');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/spanishdict');
 
 var app = express();
 
