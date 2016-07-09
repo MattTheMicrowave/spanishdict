@@ -1,8 +1,48 @@
+@font-face {
+    font-family: 'mex1';
+    src: url('../fonts/TACOM___.ttf');
+}
+
+@font-face {
+    font-family: 'mex2';
+    src: url('../fonts/JI Chimichanga.ttf');
+}
+
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+
 }
 
 a {
   color: #00B7FF;
+}
+
+#container {
+
+  display: inline-block;
+}
+
+.display {
+  display:inline-block;
+
+}
+
+h1, h2, h3, h4, p {
+  font-family: 'mex1';
+}
+
+p {
+  font-size: 30px;
+
+  }
+
+h4 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+li {
+  font-family: 'mex2';
+  font-size: 30px;
 }
